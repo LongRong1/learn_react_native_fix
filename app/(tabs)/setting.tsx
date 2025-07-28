@@ -1,15 +1,15 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 
-const Index = () => {
+const SettingScreen = () => {
   return (
     <View style={styles.container}>
-      <Text>Index</Text>
+      <Text>SettingScreen</Text>
     </View>
   )
 }
 
-export default Index
+export default SettingScreen
 
 const styles = StyleSheet.create({
   container:{

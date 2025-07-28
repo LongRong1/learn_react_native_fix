@@ -1,16 +1,7 @@
-import { NativeStackNavigationProp } from "@react-navigation/native-stack";
-import { useNavigation } from "expo-router";
-import { Button, Text, TouchableOpacity, View } from "react-native";
+import React from 'react'
 
-export default function HomeScreen() {
-  const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
-
+export const home = () => {
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' ,borderColor:"white"}}>
-      <Text>Details Screen</Text>
-      <TouchableOpacity onPress={() => navigation.navigate('Details')}>
-        Go to Details... again
-      </TouchableOpacity>
-    </View>
-  );
+    <div>home</div>
+  )
 }
