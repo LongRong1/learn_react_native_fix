@@ -6,6 +6,8 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
 import ProgressState from '@/components/ProgressState';
+import Preferences from '@/components/Preferences';
+import DangerZone from '@/components/DangerZone';
 
 const SettingScreen = () => {
 
@@ -23,6 +25,7 @@ const SettingScreen = () => {
             <LinearGradient colors={colors.gradients.primary} style={settingStyles.iconContainer}>
               <Ionicons name="settings" size={28} color={colors.text} />
             </LinearGradient>
+            <Text style={settingStyles.title}>Settings</Text>
           </View>
         </View>
 
@@ -31,6 +34,10 @@ const SettingScreen = () => {
           showsVerticalScrollIndicator={false}>
 
           <ProgressState/>
+
+          <Preferences/>
+
+          <DangerZone/>
         </ScrollView>
       </SafeAreaView>
     </LinearGradient>
